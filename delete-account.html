@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+  DhanLekha — Account & Data Deletion
+  ───────────────────────────────────────────────────────────────────────────
+  Responsible developer: Swarjun Tech (individual developer account).
+  This page is required by Google Play's account-deletion policy and is linked
+  from the Play Store "Data safety" section (Delete account URL / Delete data URL).
+
+  To host free on GitHub Pages:
+    • Commit this file alongside the privacy policy (e.g. at docs/dhanlekha-delete-account.html).
+    • Repo → Settings → Pages → Source: "Deploy from a branch" → branch: main, folder: /docs.
+    • Your URL will be: https://chitramstudio.github.io/SwarjunTech/dhanlekha-delete-account.html
+    • Use that URL in the Google Play "Data safety → Delete account URL" (and Delete data URL) fields.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DhanLekha — Delete Account &amp; Data</title>
+  <style>
+    :root {
+      --brand: #E67D06;
+      --ink: #1f2430;
+      --muted: #5b6472;
+      --line: #e7e9ee;
+      --bg: #ffffff;
+      --soft: #fff7ef;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: #f6f7f9;
+      line-height: 1.65;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 0 20px 64px; }
+    header {
+      background: var(--brand);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 6px; font-size: 28px; letter-spacing: .3px; }
+    header p { margin: 0; opacity: .92; font-size: 14px; }
+    main {
+      background: var(--bg);
+      margin-top: -24px;
+      border-radius: 14px;
+      box-shadow: 0 6px 24px rgba(0,0,0,.06);
+      padding: 32px 28px;
+    }
+    h2 {
+      font-size: 19px;
+      margin: 32px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--line);
+      color: var(--ink);
+    }
+    h2:first-of-type { margin-top: 8px; }
+    h3 { font-size: 16px; margin: 20px 0 6px; }
+    p, li { color: var(--ink); font-size: 15px; }
+    a { color: var(--brand); }
+    .muted { color: var(--muted); font-size: 14px; }
+    .callout {
+      background: var(--soft);
+      border: 1px solid #f3d9bd;
+      border-left: 4px solid var(--brand);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin: 16px 0;
+    }
+    .callout strong { color: #a85a00; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+    th, td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+    th { background: #fafbfc; }
+    ol, ul { padding-left: 20px; }
+    li { margin: 4px 0; }
+    footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 28px; }
+    code { background: #f1f3f5; padding: 1px 5px; border-radius: 4px; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DhanLekha — Delete Account &amp; Data</h1>
+    <p>Last updated: 1 July 2026</p>
+  </header>
+
+  <div class="wrap">
+    <main>
+      <p>
+        This page explains how to request deletion of your <strong>DhanLekha</strong> account
+        and associated data. DhanLekha is developed and operated by
+        <strong>Swarjun Tech</strong>, the developer of DhanLekha. For
+        details on what data we collect and how it is handled, see our
+        <a href="https://chitramstudio.github.io/SwarjunTech/dhanlekha-privacy-policy.html">Privacy Policy</a>.
+      </p>
+
+      <div class="callout">
+        <strong>Fastest option:</strong> You can permanently delete your account and cloud data
+        directly inside the app — <strong>Account</strong> tab &rarr; <strong>Delete Account</strong>.
+        No web request is needed.
+      </div>
+
+      <h2 id="in-app">1. Delete from within the app</h2>
+      <ol>
+        <li>Open DhanLekha and sign in.</li>
+        <li>Go to the <strong>Account</strong> tab.</li>
+        <li>Tap <strong>Delete Account</strong>.</li>
+        <li>Confirm by tapping <strong>Delete</strong>.</li>
+      </ol>
+      <p class="muted">
+        If you see a &ldquo;please log in again&rdquo; message, sign out and back in, then retry.
+        Re-authentication shortly before deletion is a standard security requirement.
+      </p>
+
+      <h2 id="email">2. Request deletion by email</h2>
+      <p>
+        If you can no longer access the app, email
+        <a href="mailto:connect.dhanlekha@gmail.com">connect.dhanlekha@gmail.com</a> from the email
+        address associated with your account, with the subject &ldquo;Delete my account.&rdquo; We
+        will verify ownership and process your request.
+      </p>
+
+      <h2 id="deleted">3. What is deleted</h2>
+      <ul>
+        <li>Your login credentials (email and password, via Firebase Authentication).</li>
+        <li>Your profile: name, email address, and phone number.</li>
+        <li>Your public look-up entry (display name and phone search keys).</li>
+        <li>Your push-notification token.</li>
+      </ul>
+
+      <h2 id="kept">4. What is kept, and why</h2>
+      <ul>
+        <li><strong>Shared ledgers and split expenses</strong> that also belong to the friends or
+          groups you shared them with are retained, so those other members keep their own
+          records. Once your account is deleted, these entries no longer contain your name or
+          contact details.</li>
+        <li><strong>Data stored only on your device</strong> (your personal, non-shared transaction
+          history) is removed when you uninstall the app. It is never stored on our servers, so
+          there is nothing for us to delete on the server side.</li>
+      </ul>
+
+      <h2 id="partial">5. Delete specific data without deleting your account</h2>
+      <p>You do not have to delete your entire account to remove individual records. Inside the app you can delete:</p>
+      <ul>
+        <li>Individual transactions.</li>
+        <li>Friend ledgers.</li>
+        <li>Groups and their split expenses.</li>
+      </ul>
+      <p class="muted">Deleting a shared item also removes it for the other members it was shared with.</p>
+
+      <h2 id="timing">6. Timing &amp; Retention</h2>
+      <p>
+        Account and profile data are removed from our active systems upon request. Residual copies
+        in routine backups are purged within 90 days. Retained shared records remain only as long
+        as the other participants keep them.
+      </p>
+
+      <h2 id="contact">7. Contact Us</h2>
+      <p>
+        Questions about deleting your account or data? Contact us at:<br />
+        <strong>Email:</strong> <a href="mailto:connect.dhanlekha@gmail.com">connect.dhanlekha@gmail.com</a>
+      </p>
+
+      <footer>
+        &copy; 2026 DhanLekha &middot; Swarjun Tech. All rights reserved.
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
